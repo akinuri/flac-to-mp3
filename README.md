@@ -4,8 +4,9 @@ A small script to convert FLAC files to MP3 files.
 
 ## Dependencies
 
-- [mutagen · PyPI](https://pypi.org/project/mutagen/)
+- [FFmpeg](https://ffmpeg.org/)
 - [pydub · PyPI](https://pypi.org/project/pydub/)
+- [mutagen · PyPI](https://pypi.org/project/mutagen/)
 
 ```
 pip install pydub
