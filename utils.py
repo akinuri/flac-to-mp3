@@ -48,9 +48,15 @@ def copy_metadata_from_flac_to_mp3(flac_path, mp3_path):
             ))
         mp3_file.save()
 
-def prog_exit(message=None):
-    if message:
-        print(message)
+def is_flac_path(path):
+    return os.path.isfile(path) and path.lower().endswith('.flac')
+
+def prog_exit(messages=[]):
+    if messages:
+        if not isinstance(messages, list):
+            messages = [messages]
+        for message in messages:
+            print(message)
     print("")
     print("Program will close.")
     input()
