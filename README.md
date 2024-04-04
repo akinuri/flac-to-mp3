@@ -17,10 +17,15 @@ pip install mutagen
 
 ## Usage
 
-Just pass the folder/directory path to the script file.
+Just pass the file and/or folder paths to the script file.
 
 ```
-convert.py "path/to/some/dir"
+convert.py "path/to/some/dir" "path/to/some/file.flac"
 ```
 
-On Windows, I just drag-and-drop the target folder on the script file.
+On Windows, I just drag-and-drop the target files/folders on the script file.
+
+## Output
+
+- If the argument is a file, the new MP3 file is created next to the FLAC file.
+- If it's a folder, a new folder with " (mp3)" appended to the original name will be created and the converted files will be in it.
